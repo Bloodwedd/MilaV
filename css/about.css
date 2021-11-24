@@ -1,0 +1,46 @@
+main{
+  height: calc(100vh - 10vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h2, h3{
+  margin-bottom: 5vh
+}
+h2{
+  font-size: 3vw;
+}
+h3{
+  font-family: "JetBrains Mono", monospace;
+}
+.portfolio{
+  border-radius: 10px;
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  font-family: "JetBrains Mono", monospace;
+  background-color: #aeefe7;
+  animation: flash 2000ms ease-in-out infinite;
+  color: #323232;
+}
+@keyframes flash{
+  0%,
+  100%{
+    background-color: #aeefe7;
+  }
+  50%{
+    background-color: #eafbf9;
+  }
+}
+@media screen and (max-width: 600px) {
+  main{
+    height: calc(100vh - 30vw);
+  }
+  h2{
+    font-size: 6vw;
+  }
+  .portfolio{
+    font-size: 4vw;
+  }
+}

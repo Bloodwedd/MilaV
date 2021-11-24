@@ -1,0 +1,106 @@
+body{
+  background: linear-gradient(rgba(250, 250, 250, 0.3), rgba(250, 250, 250, 0.3)), url(../images/momiji.jpg) no-repeat center center fixed;;
+  background-size: cover;
+  background-attachment: fixed;
+  --webkit-background-size: cover;
+  text-align: center;
+}
+#tours-section{
+  height: calc(100vh - 5vw);
+}
+form{
+  font-family: "JetBrains Mono", monospace;
+  height: 65vh;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vw;
+  background-color: rgba(250, 250, 250, 0.5);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #999999, -1px -1px 5px #f1f1f1;
+}
+form, h3{
+  font-size: 1.75vw;
+  font-weight: 700;
+}
+input, textarea, #tours, .contact-btn{
+  padding: 0.5vw 2vw;
+  border-radius: 1vw;
+  border: none;
+  box-shadow: 1px 1px 5px #999999, -1px -1px 5px #f1f1f1;
+  --webkit-appearance: none;
+  color: #323232;
+  font-size: 1.5vw;
+}
+select{
+  margin: 0;
+  padding: 0.5vw;
+}
+option{
+  font-family: "JetBrains Mono", monospace;
+}
+h2{
+  font-size: 2.5vw;
+  padding: 2vw 0;
+  margin: 0 auto;
+}
+.contact-btn{
+  border-radius: 10px;
+  padding: 0.25vw 2vw;
+  font-size: 2vw;
+  font-family: "JetBrains Mono", monospace;
+  background-color: #aeefe7;
+  animation: flash 2000ms ease-in-out infinite;
+}
+@keyframes flash{
+  0%,
+  100%{
+    background-color: #aeefe7;
+  }
+  50%{
+    background-color: #eafbf9;
+  }
+}
+.tours{
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+.tour-item{
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 0.5);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #999999, -1px -1px 5px #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+  #tours-section{
+    height: calc(100vh - 25vw);
+  }
+  form{
+    height: 60vh;
+  }
+  form, h3{
+    font-size: 5vw;
+  }
+  input, textarea, #tours, .contact-btn{
+    font-size: 4vw;
+  }
+  h2{
+    font-size: 4.5vh;
+    width: 80vw;
+  }
+  .contact-btn{
+    font-size: 4vw;
+    padding: 2vw 5vw;
+    font-weight: 700;
+  }
+}

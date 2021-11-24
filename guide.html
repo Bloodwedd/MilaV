@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mila V. - Web Designer</title>
+  <link rel="stylesheet" href="./css/navigation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/guide.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="flex">
+    <div class="header-left flex">
+      <a href="./index.html"><img src="./images/grisou.png" alt="logo" class="grisou"></a>
+      <h1 class="header-title">Tour Guide</h1>
+    </div>
+    <nav id="navbar">
+      <ul class="navigation flex">
+        <li><a class="nav-link" href="./index.html">Home</a></li>
+        <li><a class="nav-link" href="./about.html">About</a></li>
+        <li><a class="nav-link" href="./gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="./guide.html">Tour Guide</a></li>
+      </ul>
+    </nav>
+    <button class="burger-menu" id="burger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+  <!-- Main -->
+  <main>
+    <section id="tours-section">
+      <h2>Customized tours in Tokyo area</h2>
+      <form action="" method="get" id="survey-form">
+        <label id="name-label" for="name">Your Name</label>
+        <input type="text" name="name" id="name" placeholder="Firstname Surname" required>
+        <label id="email-label">Your Email</label>
+        <input type="email" name="mail" id="email" placeholder="xxxxxxxxx@xxxx.xxx" for="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <h3>What tour would you be<br>interested in?</h3>
+        <div id="dropdown">      
+          <select id="tours" name="tours">
+            <option value="tokyo4">4 Hours in Tokyo</option>
+            <option value="tokyo8">8 hours in Tokyo</option>
+            <option value="tokyoArea">12 Hours in Tokyo Area</option>
+          </select>
+        </div>
+        <button id="submit" class="contact-btn">Contact us to plan<br>your perfect trip</button>
+      </form>
+    </section>
+    <h2>Our tours</h2>
+    <div class="tours">
+      <div class="half tour-item">
+        <p>4 hours Tour in central Tokyo</p>
+      </div>
+      <div class="full tour-item">
+        <p>8 hours Tour in central Tokyo</p>
+      </div>
+      <div class="outside tour-item">
+        <p>12 hours Tour oustide of Tokyo</p>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer id="footer">
+    <small>&copy; 2021 Mila V.</small>
+  </footer>
+  <script src="./js/navbar.js"></script>
+</body>
+</html>
